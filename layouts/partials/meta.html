@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<title>{{ if .IsHome }}Home - {{ else }}{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}</title>
+{{ $style := resources.Get "css/main.css" | resources.Minify }}
+
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+
+<script defer src="https://cloud.umami.is/script.js" data-website-id="8d2ae866-edf8-4917-8777-63622d23a641"></script>
+
+{{- with .Params.jsxgraphcore -}}
+ <!-- <script  type="text/javascript" src="/js/0.99.5-jsxgraphcore.js"></script> -->
+
+ <script type="text/javascript" charset="UTF-8"
+ src="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraphcore.js"></script>
+<link rel="stylesheet"
+ type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/jsxgraph/1.4.6/jsxgraph.css" />
+ <!-- <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      processEscapes: true,
+    }
+  });
+  </script>
+  <script type="text/javascript" src="/js/MathJax-2.7.1.js">
+  </script> -->
+
+{{- end -}}

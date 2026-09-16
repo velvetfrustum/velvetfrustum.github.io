@@ -1,0 +1,23 @@
+{{ if .Params.year}}
+    <div>
+    Year: {{ .Params.year }}
+    </div>
+{{end}}
+
+{{ if .Params.client_name}}
+    <div>
+        Client: {{ .Params.client_name | markdownify }}
+    </div>
+{{ end}}
+
+{{ if .Params.myrole}}
+    <div>
+        Role: {{ .Params.myrole }}
+    </div>
+{{ end}}
+
+{{ if .Params.pictures_credit}}
+    <div>
+        Photo: {{ .Params.pictures_credit }}
+    </div>
+{{ end}}

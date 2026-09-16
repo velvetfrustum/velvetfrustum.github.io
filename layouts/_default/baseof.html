@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head>
+{{ partial "meta.html" .}}
+</head>
+
+<body>
+<header>{{ partial "menu.html" . }}</header>
+<div class="main">
+    {{ block "main" . }}{{ end }}
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<div class="works-list">
+    {{ range (where site.RegularPages "Section" "works").ByParam "order" }}
+        <div class="works-row">
+            <div class="grid l4-12 works-info">
+                <h2 class="works-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                {{ if .Params.year }}
+                    <div class="works-year">{{ .Params.year }}</div>
+                {{ end }}
+                {{ with .GetTerms "tags" }}
+                    <ul class="works-tags">
+                        {{ range . }}
+                            <li>{{ .LinkTitle }}</li>
+                        {{ end }}
+                    </ul>
+                {{ end }}
+            </div>
+            <a href="{{ .Permalink }}" class="grid l8-12 works-cover-link">
+                {{ if .Params.cover }}
+                    <img src="{{ .Params.cover }}" class="works-cover">
+                {{ end }}
+            </a>
+        </div>
+    {{ end }}
+</div>

@@ -1,0 +1,28 @@
+<!-- https://www.keycdn.com/blog/responsive-images -->
+
+{{ if .Get "link"}}
+    <a href = "{{ .Get "link" }}" >
+{{ end }}
+
+
+<img sizes="(min-width: 1200px) 730w,
+            (max-width: 1199px) 610w,
+            (max-width: 380px) 350w"
+     srcset="{{ .Get "path" }}large.jpg 730w,
+             {{ .Get "path" }}medium.jpg 610w,
+             {{ .Get "path" }}small.jpg 350w"
+     src="{{ .Get "path" }}small.jpg"
+    {{ if .Get "caption"}}
+        alt="{{ .Get "caption" }}"
+    {{ end }}
+    {{ if .Get "width"}}
+        class = "grid {{ .Get "width" }}"
+    {{ else }}
+        class = "grid"
+    {{ end }}
+
+    >
+
+    {{ if .Get "link" }}
+    </a>
+    {{ end }}

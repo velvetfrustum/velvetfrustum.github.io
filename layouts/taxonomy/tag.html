@@ -1,0 +1,39 @@
+{{ define "main" }}
+    <div class="masonry-container">
+        <div class="index-content">
+            <div class="grid-gutter"></div>
+            <div class="grid-sizer"></div>
+
+            
+            <div>
+              <div class = "grid l12-12">
+                <ul class="alltags">
+                  <li>Tags:</li>
+
+                  {{$cLink := .Permalink}}
+                  {{ range .Site.Taxonomies.tags }}
+                  <li>
+                      <a class="{{if (eq .Page.Permalink $cLink)}}tag-selected{{end}}"   href="{{ .Page.Permalink }}">{{ .Page.Title }} </a>
+                  </li>
+                  {{ end }}
+                </ul>
+              </div>
+
+
+                {{ range .RegularPages }}
+                  {{ if .Params.cover }}
+                  <a href="{{ .Permalink }}">
+                      <img src="{{ .Params.cover }}" class="grid l2-12">
+                    </a>
+                  {{ end }}
+                {{ end }}
+            </div>
+        </div>     
+
+
+        {{ partial "prevnext.html" . }}
+
+    </div>
+    {{ partial "footer-masonry.html" . }}
+{{ end }}
+  

@@ -1,0 +1,376 @@
+/*
+TODO:
+
+1) Header che sparisce quando scrolli verso il basso
+0) capire come mai non carica small images su piccolo schermo.
+
+*/
+
+
+/*
+Rules. Use rem for font size
+Width % and max-width
+use PX For anything you want a certain, fixed size, 
+use rem For anything you want to scale with font-size, 
+Use % for anything you want to scale to the available space in the window/container
+
+*/
+
+
+@font-face {
+    font-family: 'ArchesRegular';
+    src: url('/fonts/ARCHES-REGULAR.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'iosevka';
+    src: url('/fonts/IosevkaCharon-Light.ttf') format('truetype');
+}
+
+
+/* Main structure*/
+
+:root {
+    --box-margin: 1em;
+    /* --text-color:rgb(235, 232, 205);
+    --link-color:rgb(194, 254, 53);
+    --border-color:rgb(194, 254, 53);
+    --background-color: rgb(28, 27, 35);
+
+
+    --text-color: #54426B;
+    --link-color:#623CEA;
+    --border-color:#623CEA;
+    --background-color: #E7DFC6;
+
+
+    --text-color: #A4D4B4;
+    --link-color:#FFCF9C;
+    --border-color:#FFCF9C;
+    --background-color: #3B1C32; */
+
+
+    --text-color: #C5D86D;
+    --link-color:#F46036;
+    --border-color:#F46036;
+    --background-color: #2E294E;
+
+
+    --font-header: 'ArchesRegular';
+    --font-body: 'iosevka';
+
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    background-color:var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    /* min-height: 100vh; */
+    flex-direction: column;
+    margin: 0;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+a:hover{
+    color: var(--link-color);
+}
+hr {
+    border: 1px solid var(--link-color);
+}
+
+/* images*/
+
+figure {
+    margin: 0px;
+    padding-top: 0;
+}
+
+/* Masonry*/
+.masonry-container {
+    max-width: 2600px;
+    margin: 0 auto;
+}
+  
+.grid-gutter {
+    width: 0.5%;
+
+}
+
+.index-content{
+    width: 96%;
+    margin: 0 2% 0 2%;
+}
+
+.grid,
+.grid-sizer {
+    width: 7.8%;
+    margin: 0 0 0.4% 0;
+}
+
+.grid.l2-12 {
+    width: 16.222%;
+}
+
+.grid.l3-12 {
+    width: 24.444%;
+}
+
+.grid.l4-12 {
+    width: 32.777%;
+}
+
+.grid.l6-12 {
+    width: 49.333%;
+}
+
+.grid.l8-12 {
+    width: 66.0%;
+}
+
+.grid.l12-12 {
+    width: 99.222%;
+}
+
+/*.grid video,
+video.grid {
+    width: 100%;
+    height: auto;
+    display: block;
+}*/
+
+/* Navigation */
+
+nav {
+    text-align: center;
+    top: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 4;
+    font-size: 1.5rem;
+    font-family: var(--font-header);
+    background: transparent;
+    position: relative;
+}
+
+nav > h2.velvet > a {
+    font-size: 3.5rem;
+    text-decoration: none;
+}
+
+nav > ul{
+    padding:1rem 0rem 1rem 0rem;
+    list-style: none;
+}
+
+nav > ul > li {
+    padding: 0rem 1rem 0rem 2rem;
+    display: inline;
+    width: 100%;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+}
+
+/* tags styling (tag page and single work page) */
+ul.alltags{
+    padding:1rem 0rem 0rem 0rem;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.alltags > li{
+    display: inline;
+    padding-right: 1rem;
+}
+
+ul.alltags > li > a.tag-selected{
+    background-color: var(--border-color);
+    color:var(--background-color);
+}
+
+/* Work page*/
+
+div.work-title{
+    font-family: var(--font-header);
+    padding-bottom: 2rem;
+    width: 100%;
+} 
+
+.work-description {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.work-text{
+    border-top: 1px solid var(--border-color);
+}
+
+.work-text, .prevnext{
+    width: 96%;
+    margin: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: var(--card-margin);
+}
+
+/* Work bottom arrows navigation */
+.prevnext > div.linkworks{
+    margin: .1em;
+    padding: .3em;
+    flex: 1;
+    flex-grow: auto;
+    flex-shrink: auto;
+    flex-basis: auto;
+}
+.linkworks.right{
+    text-align: right;
+}
+.linkworks.quit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.next-work {
+    font-size: 5rem;
+    font-family: var(--font-body);
+    text-decoration: none;
+}
+
+a.quit {
+    font-size: 3rem;
+    font-family: var(--font-header);
+    text-decoration: none;
+}
+
+a.prev-work{
+    text-align: left;
+    font-size: 5rem;
+    font-family: var(--font-body);
+    text-decoration: none;
+}
+
+/* About(now Index) and Teaching page */
+.single-medium-column {
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr.green{
+    border-top: 1px solid var(--border-color);
+}
+
+/* Works page */
+.works-list {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.works-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.works-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-right: 2rem;
+}
+
+.works-title {
+    font-family: var(--font-header);
+    margin: 0 0 0.5rem 0;
+}
+
+.works-year {
+    padding-bottom: 0.5rem;
+    opacity: 0.8;
+}
+
+.works-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.works-tags > li {
+    padding: 0.1rem 0.6rem;
+    border: 1px solid var(--border-color);
+}
+
+.works-cover-link {
+    display: block;
+}
+
+.works-cover {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tablet adjsustments */
+@media (max-width: 900px) {
+    nav > ul{
+        padding:0.2rem 0rem 0.2rem 0rem;
+    }
+    nav > ul > li {
+        padding: 0rem 0.5rem 0rem 0rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Mobile adjsustments */
+@media (max-width: 700px) {
+    .masonry-container{
+        max-width: 100%;
+    }
+    .single-medium-column {
+        max-width: 96%;
+        margin: 0% 2% 0% 2%;
+    }
+    .grid {
+        width: 100% !important; margin-bottom: 4%;
+    }
+    nav > ul{
+        padding:0.0rem;
+    }
+    nav > ul > li {
+        padding: 0.5rem 0rem 0.5rem 0rem;
+        display: block;
+        font-size: 1.2rem;
+    }
+    .main {
+        margin-top: 0rem;
+    }
+}
+
+/* Video
+* via https://css-tricks.com/snippets/sass/maintain-aspect-ratio-mixin/
+* and from comments http://codepen.io/jakob-e/pen/LEdWNB
+*/
+.sixteen-nine { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; }
+.sixteen-nine iframe { position: absolute; width: 100%; height: 100%; left: 0; top: 0; }
+
+.four-three { position: relative; width: 100%; height: 0; padding-bottom: 75%; }
+.four-three iframe { position: absolute; width: 100%; height: 100%; left: 0; top: 0; }

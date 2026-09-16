@@ -1,0 +1,53 @@
+<footer></footer>
+<!-- <script src="/js/jquery-2.2.3.min.js"></script> -->
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+
+<script>
+  const container = document.querySelector('.index-content');
+
+  let toggleVideoControls = () => {
+    const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    document.querySelectorAll("video").forEach(vid => {
+      // enable controls on small screens
+      if (width < 600) {
+        vid.setAttribute("controls", "controls")
+      } else {
+        if (vid.hasAttribute("controls")) {
+          vid.removeAttribute("controls")
+        }
+      }
+    });
+  };
+
+
+  if (container) {
+    
+    let msnry;
+    imagesLoaded(container, function () {
+      // init Masonry after all images have loaded
+      msnry = new Masonry(container, {
+        columnWidth: '.grid-sizer',
+        gutter: '.grid-gutter',
+        itemSelector: '.grid',
+        transitionDuration: '0.1s'
+      });
+
+      // Images. As they load, call masonry. This is redundand with imagesLoaded
+      // but sometime it needs to be called twice
+      document.querySelectorAll("img").forEach(img =>
+        img.addEventListener('load', (event) => {
+          msnry.layout();
+        })
+      )
+
+      // html5 videos. As they load, call masonry.
+      let videos = document.querySelectorAll("video");
+      videos.forEach(vid =>
+        vid.addEventListener('loadeddata', (event) => {
+          msnry.layout();
+        })
+      )
+    }
+  )}
+</script>
