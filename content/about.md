@@ -6,13 +6,12 @@ layout: single-medium-column
 
 
 
-Velvet Frustum is a small software agency with 20 years of experience building interactive web applications, specialized in geospatial and 3D data visualization, real-time interaction, and performance-critical systems.
+Velvet Frustum is a small software agency with 20 years of experience building interactive web applications, specializing in 3D, geospatial data and computational visualization.
 
-We work across the stack, combining Three.js, React, WebGL/WebGPU and custom graphics
-programming with APIs, databases, data processing, and backend services. 
+We combine Three.js, React, WebGL/WebGPU and custom graphics programming with APIs, databases, data processing, and backend services. 
 
-We are comfortable across the geospatial pipeline — point clouds and satellite imagery, mesh generation, coordinate systems and georeferencing, tile-based data loading, and rendering large georeferenced scenes
-in the browser.
+Our work spans the geospatial pipeline, including satellite imagery, LiDAR, point clouds, mesh generation, georeferencing, and large-scale 3D scenes.
+
 
 {{< separator >}}
 
