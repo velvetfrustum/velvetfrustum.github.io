@@ -10,7 +10,7 @@ client_name: "[Neeeu](http://neu.io)"
 pictures_credit: "Courtesy of Neeeu"
 myrole: 'Graphics programming, consulting'
 year: '2023'
-order: 3
+order: 7
 thumbclass: 'grid l6-12'
 cover: '/img/works/neu-photobooth/cover.jpg'
 description: 'We worked with Neeeu to develop the software that runs a photo booth stand. We created a generative solution for composing visual collages of geometric shapes and facial features. We implemented a custom graphics pipeline that uses *Signed Distance Function* to add shadows, textures and colors gradients to the standard 2D drawing functions in openFrameworks.'
