@@ -15,8 +15,14 @@
                 {{ end }}
             </div>
             <a href="{{ .Permalink }}" class="grid l8-12 works-cover-link">
-                {{ if .Params.cover }}
-                    <img src="{{ .Params.cover }}" class="works-cover">
+                {{ with .Params.cover }}
+                    {{/* Prefer a cover-high.webp next to the cover, if present */}}
+                    {{ $cover := . }}
+                    {{ $high := path.Join (path.Dir .) "cover-high.webp" }}
+                    {{ if fileExists (path.Join "static" $high) }}
+                        {{ $cover = $high }}
+                    {{ end }}
+                    <img src="{{ $cover }}" class="works-cover">
                 {{ end }}
             </a>
         </div>
