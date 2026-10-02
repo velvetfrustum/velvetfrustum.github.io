@@ -1,5 +1,10 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+<link rel="icon" href="/img/favicons/favicon.ico" sizes="any">
+<link rel="manifest" href="/img/favicons/site.webmanifest">
 <title>{{ if .IsHome }}Home - {{ else }}{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}</title>
 {{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ with .Keywords }}<meta name="keywords" content="{{ delimit . ", " }}">{{ end }}
