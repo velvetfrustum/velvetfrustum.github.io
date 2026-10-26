@@ -374,3 +374,10 @@ hr.green{
 
 .four-three { position: relative; width: 100%; height: 0; padding-bottom: 75%; }
 .four-three iframe { position: absolute; width: 100%; height: 100%; left: 0; top: 0; }
+
+.site-footer {
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    padding: 2em 0 1em;
+}
