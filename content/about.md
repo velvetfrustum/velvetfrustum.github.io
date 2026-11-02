@@ -6,12 +6,11 @@ keywords: ["webgl developer", "Three.js developer", "3D web developer", "graphic
 ---
 
 
+Velvet Frustum is a creative technology studio backed by 20 years of experience building complex interactive web applications, spatial software, and custom graphics engines.
 
-Velvet Frustum is a small software agency with 20 years of experience building interactive web applications, specializing in 3D, geospatial data and computational visualization.
+We operate across the entire graphics and data spectrum—combining WebGL/WebGPU, custom rendering, and Three.js with scalable backend services and APIs. Our expertise covers the complete geospatial pipeline, transforming satellite data, LiDAR, and point clouds into precise, real-time 3D environments.
 
-We combine Three.js, React, WebGL/WebGPU and custom graphics programming with APIs, databases, data processing, and backend services. 
-
-Our work spans the geospatial pipeline, including satellite imagery, LiDAR, point clouds, mesh generation, georeferencing, and large-scale 3D scenes.
+We view code as a medium for visual and spatial reasoning. Whether developing custom rendering pipelines, procedural asset generation, or interactive computational tools, we craft systems that give creators and organizations total control over geometry, performance, and experience.
 
 
 {{< separator >}}
