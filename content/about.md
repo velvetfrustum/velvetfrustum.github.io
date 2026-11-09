@@ -1,16 +1,15 @@
 ---
-title: About
+title: Full-Stack Development & Infrastructure | Velvet Frustum
 layout: single-medium-column
-description: "Senior software engineer and freelance webgl developer specializing in Three.js, React Three Fiber, interactive 3D graphics, and real-time web applications."
-keywords: ["webgl developer", "Three.js developer", "3D web developer", "graphics programmer", "React Three Fiber", "WebGPU", "GLSL shaders"]
+description: "Selected software development projects in full-stack applications, Linux infrastructure, 3D graphics, WebGL and geospatial visualisation."
+keywords: ["Full-Stack Developer", "Berlin"]
 ---
 
+Velvet Frustum is an independent software development studio with 20 years of experience building complex web applications, backend systems, and interactive software.
 
-Velvet Frustum is a creative technology studio backed by 20 years of experience building complex interactive web applications, spatial software, and custom graphics engines.
+We work across the full technology stack, combining modern web development, APIs, databases, and Linux-based infrastructure with advanced graphics and visualisation. Our experience includes full-stack applications, custom rendering engines, and the processing of geospatial data such as satellite imagery, LiDAR, and point clouds.
 
-We operate across the entire graphics and data spectrum; combining WebGL/WebGPU, custom rendering, and Three.js with scalable backend services and APIs. Our expertise covers the complete geospatial pipeline, transforming satellite data, LiDAR, and point clouds into precise, real-time 3D environments.
-
-We view code as a medium for visual and spatial reasoning. Whether developing custom rendering pipelines, procedural asset generation, or interactive computational tools, we craft systems that give creators and organizations total control over geometry, performance, and experience.
+We focus on practical engineering, performance, and maintainable systems, helping companies, studios, and research teams turn complex technical ideas into working software.
 
 
 {{< separator >}}
@@ -19,7 +18,7 @@ We view code as a medium for visual and spatial reasoning. Whether developing cu
 
 info (at) velvetfrustum (dot) com.
 
-Past collaborations include software companies, design studios, artists and public institutions such as:
+Past collaborations include software companies, design studios, and public institutions such as:
 
 - [Volkswagen Future Center](https://schiffbauergasse.de/poi/vw-group-future-center-europe)
 - [HERE Technologies](https://www.here.com/)
@@ -33,8 +32,6 @@ Past collaborations include software companies, design studios, artists and publ
 - [Humboldt University Berlin](https://www.hu-berlin.de/en)
 - [University of Art Berlin](https://newmedia.udk-berlin.de/)
 - [University of Helsinki](https://www.helsinki.fi/en)
-- [Heiner Franzen](https://www.heinerfranzen.de/)
-- [Annika Larsson](https://en.wikipedia.org/wiki/Annika_Larsson)
 - [Citizen Art Days](http://www.citizenartdays.de/)
 - [Mechatronica](https://mechatronica.bandcamp.com/)
 
