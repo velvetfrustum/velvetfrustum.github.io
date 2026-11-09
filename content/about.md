@@ -5,11 +5,11 @@ description: "Selected software development projects in full-stack applications,
 keywords: ["Full-Stack Developer", "Berlin"]
 ---
 
-Velvet Frustum is an independent software development studio with 20 years of experience building complex web applications, backend systems, and interactive software.
+Velvet Frustum is an independent software development studio with 20 years of experience building web applications, backend systems and interactive software.
 
-We work across the full technology stack, combining modern web development, APIs, databases, and Linux-based infrastructure with advanced graphics and visualisation. Our experience includes full-stack applications, custom rendering engines, and the processing of geospatial data such as satellite imagery, LiDAR, and point clouds.
+We work across the full technology stack, from frontend applications and APIs to databases, Linux infrastructure and deployment. We also bring specialised experience in 3D graphics, custom rendering engines and geospatial data processing, including satellite imagery, LiDAR and point clouds.
 
-We focus on practical engineering, performance, and maintainable systems, helping companies, studios, and research teams turn complex technical ideas into working software.
+We help companies, studios and research teams turn complex technical requirements into practical, performant and maintainable software.
 
 
 {{< separator >}}
